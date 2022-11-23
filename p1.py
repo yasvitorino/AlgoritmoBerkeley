@@ -101,10 +101,10 @@ def main():
     while(True):
 
         if(client.syncing == False):
-            doCycle = random.randrange(0, 2) # Probabilidade de Ciclo.
+            doCycle = random.randrange(0, 2) 
 
             if doCycle == 1:
-                # Realiza o Ciclo.
+               
                 prod.product()
 
                 production = prod.getProduction()
@@ -113,7 +113,7 @@ def main():
 
                 client.sendProduction(production, productionType, productionTime)
             
-            # Adormece por um período aleatório.
+            
             timeToDelay = random.randrange(0, 11)
             time.sleep(timeToDelay)
 
