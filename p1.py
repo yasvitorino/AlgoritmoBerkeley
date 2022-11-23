@@ -95,7 +95,7 @@ class Production:
 
 
 def main():
-    client = Client("localhost", 8081, 1)
+    client = Client("10.103.10.103", 8081, 1)
     prod = Production("TEMPERATURA (°C)")
 
     while(True):
